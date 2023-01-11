@@ -1,0 +1,58 @@
+.bird-example__image {
+    width: 200px;
+    height: 155px;
+}
+
+.bird-example__image img {
+    width: 200px;
+    height: 155px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.bird-example__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.bird-example__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+    border-radius: 25px;
+    padding: 10px;
+    background: var(--main-bg-color);
+}
+
+.bird-example__wrapper {
+    height: 100%;
+
+}
+
+.bird-example__info {
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.bird-example__description {
+    word-break: break-all;
+    min-height: 115px;
+    height: 100%;
+}
+
+.bird-example__name {
+    margin: 5px;
+}
+
+.bird-example__species {
+    margin: 5px;
+}

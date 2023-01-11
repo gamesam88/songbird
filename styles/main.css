@@ -1,0 +1,51 @@
+body {
+    position: relative;
+    margin: 0 auto;
+    color: white;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+main {
+    background: url('../assets/main-background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    width: 100%;
+}
+
+.main__wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer__links {
+
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.footer__link img {
+    height: 30px;
+}

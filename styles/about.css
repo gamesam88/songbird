@@ -1,0 +1,30 @@
+.greeting__content {
+    width: 100%;
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.greeting__text {
+    color: black;
+}
+
+.main-greeting__btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgba(0, 150, 0, 0.5);
+}
+
+.main-greeting__btn:hover {
+    background: rgba(0, 150, 0, 0.8);
+}

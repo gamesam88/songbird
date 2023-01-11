@@ -1,0 +1,494 @@
+:root {
+    --main-bg-color: rgba(100, 100, 100, 0.8);
+}
+
+.game {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.game__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.game__stages {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.game__stage {
+    color: yellow;
+    cursor: default;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.game__stage__active {
+    line-height: 30px;
+    background: rgba(0, 150, 0);
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.header__wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo__image img {
+    width: 50px;
+}
+
+.game__bird {
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.bird__container {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--main-bg-color);
+}
+
+.bird__image {
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+}
+
+.bird__image img {
+
+    width: 180px;
+    height: 138px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.bird__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.bird__info {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+
+.bird__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.bird__score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 20px;
+}
+
+.bird__player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    gap: 20px;
+}
+
+.player__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(217, 230, 36, 0.2);
+    flex-shrink: 0;
+    border: none;
+}
+
+.player__btn:hover {
+    background: rgba(217, 230, 36, 0.5);
+}
+
+.player__btn__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.time-watcher {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    padding-bottom: 5px;
+}
+
+
+.icon-play {
+    background: url('../assets/icons/icont-play-3917707.svg')no-repeat;
+    background-size: cover;
+
+}
+
+.icon-volume {
+    background: url('../assets/icons/icon-volume.svg')no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-pause {
+    background: url('../assets/icons/icon-pause-3917619.svg')no-repeat;
+    background-size: cover;
+}
+
+.seek {
+    -webkit-appearance: none !important;
+    appearance: none;
+    cursor: pointer;
+    height: 5px;
+    width: 100%;
+    /* border: 1px solid #000000; */
+    vertical-align: middle;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: white;
+    outline: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    appearance: none;
+    background: #232323;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border-radius: 10px;
+}
+
+.seekbar {
+    padding: 10px 30px;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    background: rgba(217, 230, 36, 0.2);
+    width: 100%;
+}
+
+.seekbar:hover {
+    background: rgba(217, 230, 36, 0.5);
+}
+
+.game__main-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-section__options {
+    display: flex;
+    width: 40%;
+
+}
+
+.options__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.options__item {
+    width: 100%;
+    height: 30px;
+    background: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.options__item:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.main-section__example {
+    width: 60%;
+    min-height: 300px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game__btn__next-level {
+    width: 100%;
+    max-width: 400px;
+    height: 30px;
+    margin: 20px 0px;
+    border-radius: 25px;
+    /* border: 1px solid black; */
+    background: var(--main-bg-color);
+    color: white;
+    border: none;
+}
+
+.next-level-available {
+    background: rgba(0, 150, 0);
+}
+
+.next-level-available:hover {
+    background: rgba(0, 200, 0);
+
+}
+
+.uncorrect {
+    background: rgba(150, 0, 0);
+}
+
+.uncorrect:hover {
+    background: rgba(200, 0, 0);
+}
+
+.correct {
+    background: rgba(0, 150, 0);
+}
+
+.correct:hover {
+    background: rgba(0, 200, 0);
+}
+
+
+
+
+.volume-container {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+
+}
+
+.volume-container .volume-button {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.volume-container .volume-slider {
+    position: absolute;
+    left: 15px;
+    bottom: 40px;
+    z-index: -1;
+    width: 8px;
+    height: 0;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6666666667);
+    transition: 0.25s;
+    border-radius: 5px;
+    rotate: 180deg;
+}
+
+.volume-container .volume-slider .volume-percentage {
+    background: black;
+    /* border-radius: 5px; */
+    height: 50%;
+    width: 100%;
+    filter: blur(1px);
+
+}
+
+.volume-container:hover .volume-slider {
+    bottom: 40px;
+    height: 100px;
+}
+
+
+@media (max-width: 400px) {
+    .seekbar {
+        padding: 10px 10px;
+    }
+
+    .bird__player {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 840px) {
+
+    .bird-example__content {
+        flex-direction: column;
+    }
+
+    .bird__image,
+    .bird-example__image {
+        width: 150px;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .bird__image img,
+    .bird-example__image img {
+
+        width: 140px;
+        height: 100px;
+        border-radius: 10px;
+        margin: 0;
+    }
+
+    .game__bird {
+        height: 160px;
+    }
+
+    .main-section__example {
+        min-height: 370px;
+    }
+}
+
+
+
+@media (max-width: 760px) {
+    .game__main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bird-example__wrapper {
+        padding: 20px;
+    }
+
+    .bird-example__content {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .bird-example__info {
+        text-align: center;
+    }
+
+    .options__list {
+        gap: 10px;
+    }
+
+    .main-section__options {
+        width: 80%;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    .bird-example__container {
+        justify-content: start;
+    }
+
+    .main-section__example {
+        min-height: 300px;
+        width: 100%;
+    }
+
+    .bird-example__description {
+        min-height: 100px;
+        overflow: hidden;
+    }
+
+    .game__btn__next-level {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 570px) {
+    .bird__container {
+        flex-direction: column;
+    }
+
+    .game__bird {
+        height: 100%;
+    }
+
+    .bird__info {
+        margin: 10px 0px;
+    }
+
+    .bird__player {
+        margin-bottom: 10px;
+    }
+
+    .logo__image img {
+        width: 40px;
+    }
+
+    .bird-example__content {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-section__example {
+        min-height: 440px;
+        text-align: center;
+    }
+
+    .game__btn__next-level {
+        width: 280px;
+    }
+
+}

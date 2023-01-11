@@ -1,0 +1,42 @@
+.game-over {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-over__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    background: var(--main-bg-color);
+    border-radius: 25px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.game-over__gratitude {
+    margin: 50px 0px;
+}
+
+.game-over__line {
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    margin: 50px 0px;
+}
+
+.game-over__btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    margin-bottom: 50px;
+}
+
+.game-over__btn:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
